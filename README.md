@@ -1,6 +1,5 @@
 # Freefly Systems Technical Challenge
 
-## The Challenge
 Read this document: [The Challenge Question](docs/freefly_challenge_question.pdf).
 
 ## Project Description
