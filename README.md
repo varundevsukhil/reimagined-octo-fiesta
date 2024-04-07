@@ -49,20 +49,20 @@ The mission software for this technical challenge has a 10 second delayed start 
 ## Docs
 This repository has multiple supporting docs to demonstrate the results of this project when it was executed on the author's computer. The following is a brief summary:
 
-1. [Video 1: screen capture of the Gazebo simulator and the mission visualizer](docs/video/Freefly_VarundevSukhil_Sim_and_Visualizer.mp4)
+1. [System design document](docs/system_design.md)
 
-2. [Video 2: screen capture of the mission progression using the QGroundControl GCS](docs/video/Freefly_VarundevSukhil_QGC.mp4)
+2. [Video 1: screen capture of the Gazebo simulator and the mission visualizer](docs/video/Freefly_VarundevSukhil_Sim_and_Visualizer.mp4)
 
-3. [The mission waypoint file (with header description)](mission/waypoints.csv) - change waypoints as needed and recompile the project
+3. [Video 2: screen capture of the mission progression using the QGroundControl GCS](docs/video/Freefly_VarundevSukhil_QGC.mp4)
 
-4. Flight logs:
+4. [The mission waypoint file (with header description)](mission/waypoints.csv) - change waypoints as needed and recompile the project
+
+5. Flight logs:
     
     1. [The log `ulg` file](test/logs/mission_log.ulg)
     2. [Link to the PX4 logs hosted online](https://review.px4.io/plot_app?log=8a0cab21-09fd-449b-b79b-001521b58a27)
     3. [Copy of the flight review](docs/flight_review.pdf)
     4. [Copy of the PID analysis](docs/pid_analysis.pdf)
-
-5. [System design document](docs/system_design.md)
 
 ## About Me
 [Varundev Sukhil](https://vsukhil.com) is a computer engineer and a roboticist.
