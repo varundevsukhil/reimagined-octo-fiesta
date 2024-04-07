@@ -62,7 +62,7 @@ This repository has multiple supporting docs to demonstrate the results of this 
     3. [Copy of the flight review](docs/flight_review.pdf)
     4. [Copy of the PID analysis](docs/pid_analysis.pdf)
 
-5. [System design document](docs/system_design.pdf)
+5. [System design document](docs/system_design.md)
 
 ## About Me
 [Varundev Sukhil](https://vsukhil.com) is a computer engineer and a roboticist.
