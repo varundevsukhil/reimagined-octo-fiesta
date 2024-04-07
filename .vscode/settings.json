@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/varundev/Freefly/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages",
+        "/home/varundev/Freefly/ros2_ws/install/px4_offboard/lib/python3.10/site-packages",
+        "/home/varundev/Freefly/ros2_ws/install/px4_msgs/local/lib/python3.10/dist-packages",
+        "/home/varundev/Freefly/ros2_ws/install/freefly_challenge/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/varundev/Freefly/ros2_ws/install/px4_ros_com/local/lib/python3.10/dist-packages",
+        "/home/varundev/Freefly/ros2_ws/install/px4_offboard/lib/python3.10/site-packages",
+        "/home/varundev/Freefly/ros2_ws/install/px4_msgs/local/lib/python3.10/dist-packages",
+        "/home/varundev/Freefly/ros2_ws/install/freefly_challenge/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
