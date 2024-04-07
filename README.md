@@ -63,3 +63,6 @@ This repository has multiple supporting docs to demonstrate the results of this 
     4. [Copy of the PID analysis](docs/pid_analysis.pdf)
 
 5. [System design document](docs/system_design.pdf)
+
+## About Me
+[Varundev Sukhil](https://vsukhil.com) is a computer engineer and a roboticist.
