@@ -4,6 +4,7 @@ I took nearly 5 hours to implement a working solution to this technical challeng
 
 ## Block diagram
 I will be referring to this system block diagram throughout this document as the "diagram".
+
 ![](/docs/system_block_diagram.png)
 
 The solution in this repository will need to be executed using a capable companion computer that is connected using a Serial link to the PX4. This method ensures that the PX4 controller is unencumbered with heavier than designed compute conditions and the existence of the node heartbeat ensures that any failure (logical or otherwise) does not cascade into the safety-critical components of the drone (including the PX4 flight computer). If this solution were to fail midway, the human controller (pilot) will be notified of the circumstance via telemetry and the mode change alarm already designed in the Px4 stack.
@@ -25,4 +26,5 @@ CSV files are parsed better than text files, and CSV is not more complex than te
 
 ### Local over GNSS coordinate system for navigation
 GNSS (or, GPS) works well for localization, but even with RTK precision, GNSS alone can not be used as a coordinate reference frame. I assume that if this challenge is to be implemented in real life, the engineers on site would have access to a hypothetical radar localization equipment that would publish the drone's position in the local coordinate system. Additionally, the following XKCD comic shows why the GNSS numbers are unreasonable.
+
 ![](/docs/coordinate_precision.png)
