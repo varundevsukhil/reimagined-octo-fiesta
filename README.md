@@ -19,6 +19,7 @@ This repository has multiple supporting docs to demonstrate the results of this 
 5. Flight logs:
     
     1. [The log `ulg` file](test/logs/mission_log.ulg)
+    2. [The log `bag` file](test/logs/freefly_bag/) - use `plotjuggler` to visualize this.
     2. [Link to the PX4 logs hosted online](https://review.px4.io/plot_app?log=8a0cab21-09fd-449b-b79b-001521b58a27)
     3. [Copy of the flight review](docs/flight_review.pdf)
     4. [Copy of the PID analysis](docs/pid_analysis.pdf)
@@ -61,7 +62,9 @@ user@computer:<path/to/px4-root-directory/>$ make px4_sitl gz_x500
 user@computer:~$ ros2 launch freefly_challenge mission.launch.py
 ```
 
-The mission software for this technical challenge has a 10 second delayed start to allow you to adjust the positions of the application windows (if you find this necessary). Sit back, and enjoy the show! The default mission is to trace the letters `FS` as a tribute to Freefly Systems.
+The mission software for this technical challenge has a 10 second delayed start to allow you to adjust the positions of the application windows (if you find this necessary). Sit back, and enjoy the show! The default mission is to trace the letters `FS` as a tribute to Freefly Systems. The following is a plot that shows (top) the arming state of the aircraft, (middle) the navigation state of the aircraft, and (bottom) the `{x, y, z}` position tuple in the local coordinate frame where the aircraft's origin for the current mission is set to the location it is armed at.
+
+![](docs/plotjuggler_info.png)
 
 ## About Me
 [Varundev Sukhil](https://vsukhil.com) is a computer engineer and a roboticist.
