@@ -28,3 +28,11 @@ CSV files are parsed better than text files, and CSV is not more complex than te
 GNSS (or, GPS) works well for localization, but even with RTK precision, GNSS alone can not be used as a coordinate reference frame. I assume that if this challenge is to be implemented in real life, the engineers on site would have access to a hypothetical radar localization equipment that would publish the drone's position in the local coordinate system. Additionally, the following XKCD comic shows why the GNSS numbers are unreasonable.
 
 ![](/docs/coordinate_precision.png)
+
+## Airframe compatibility and operability
+This solution should be easily portable to different airframes sizes within the multirotor category with minimal changes to the source code since the flight parameters are determined via the QGC GCS. Similar to other guided and offboard control modes, the human operator can assume and/or hand-off control priority by selecting the appropriate mode channel on their RC radio.
+
+The built-in failsafe feature implemented in this solution is to trigger auto-land mode in the PX4 stack when the mission control node terminates without iterating through the entire waypoint list. To test this feature, the user can `ctrl+c` the terminal executing the solution package and observe the safe auto-land via the QGC GCS, `Rviz2`, ot the `Gazebo` simulator interface.
+
+## Potential hurdles
+I did not have a PX4 controller to test a desired feature: limiting the lateral acceleration and velocity. Since the drone in this solution is emulating the extruder of a 3D printer, I was able to lock-in the yaw angle within the mission control node from start to finish, but without a HiTL setup, I was unable to set the max lateral acceleration and velocity parameters. This drawback can be observed when the drone overshoots and performs overcorrection when switching between waypoints as the mission progresses.
