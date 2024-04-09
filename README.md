@@ -66,5 +66,9 @@ The mission software for this technical challenge has a 10 second delayed start 
 
 ![](docs/plotjuggler_info.png)
 
+![](docs/video/Freefly_VarundevSukhil_Sim_and_Visualizer.mp4)
+
+![](docs/video/Freefly_VarundevSukhil_QGC.mp4)
+
 ## About Me
 [Varundev Sukhil](https://vsukhil.com) is a computer engineer and a roboticist.
