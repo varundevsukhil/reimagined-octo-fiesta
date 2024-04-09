@@ -3,7 +3,7 @@
 Read this document: [The Challenge Question](docs/freefly_challenge_question.pdf).
 
 ## Project Description
-This project is built using PX4 and uXRCE-DDS bridge to ROS2 Humble. I chose this method over directly implementing using MAVSDK-Python because I believe ROS2 provides additional considerations for safety-critical applications such as autonomous robots (such as UAVs) where the points of software failure can be compartmentalized without making breaking changes downstream on my local machine or downstream with changes to the PX4 stack itself. This project package should work indefinitely if all the build instructions are followed for the duration of the respective module's support timelines.
+This project is built using PX4 and uXRCE-DDS bridge to ROS2 Humble. I chose this method over directly implementing using MAVSDK-Python because I believe ROS2 provides additional considerations for safety-critical applications such as autonomous robots (such as UAVs) where the points of software failure can be compartmentalized without making breaking changes downstream on my local machine or upstream with changes to the PX4 stack itself. This project package should work indefinitely if all the build instructions are followed for the duration of the respective module's support timelines.
 
 ## Docs
 This repository has multiple supporting docs to demonstrate the results of this project when it was executed on the author's computer. The following is a brief summary:
